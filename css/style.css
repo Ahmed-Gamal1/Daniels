@@ -1,0 +1,319 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME */
+
+.bg-myNav{
+    background: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    
+}
+
+.home{
+    background-image: url('../imgs/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.homeLayer{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+.layerContent{
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 65px;
+}
+a {
+    list-style-type: none; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+ul li a {
+    list-style-type: none; 
+}
+
+.typingClass::after {
+    content: "";
+    animation-name: typingSkill;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear; 
+}
+
+@keyframes typingSkill {
+    0% { content: "|"; }
+    2% { content: "L|"; }
+    4% { content: "La|"; }
+    6% { content: "Lar|"; }
+    8% { content: "Larr|"; }
+    10% { content: "Larry|"; }
+    12% { content: "Larry D|"; }
+    14% { content: "Larry Da|"; }
+    16% { content: "Larry Dan|"; }
+    18% { content: "Larry Dani|"; }
+    30% { content: "Larry Danie|"; }
+    40% { content: "Larry Daniel|"; }
+    42% { content: "Larry Daniels|"; }
+    44% { content: "D|"; }
+    46% { content: "De|"; }
+    48% { content: "Dev|"; }
+    50% { content: "Deve|"; }
+    52% { content: "Devel|"; }
+    54% { content: "Develo|"; }
+    56% { content: "Develop|"; }
+    58% { content: "Develope|"; }
+    60% { content: "Developer|"; }
+    80% { content: "|"; }
+    82% { content: "D|"; }
+    84% { content: "De|"; }
+    86% { content: "Des|"; }
+    88% { content: "Desi|"; }
+    90% { content: "Desig|"; }
+    92% { content: "Design|"; }
+    94% { content: "Designe|"; }
+    96% { content: "Designer|"; }
+    98% { content: "|"; }
+    100% { content: ""; }
+}
+/* home.icon */
+  
+  .social-icon a {
+    margin: 0 10px; 
+    color: inherit; 
+    text-decoration: none; 
+    
+  }
+  .social-icon a span i{
+    background-color:rgba(0, 0, 0, 0.6) ;
+    border-radius: 50%;
+
+  }
+/* end home  */
+
+/* start about */
+
+.about{
+    background-color: #F5F5F5;
+}
+
+.skill-item p {
+ margin: 0;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.title-left {
+    font-size: 2rem;
+    color:#343434;
+}
+
+.title-left h3{
+    font-size: 15px;
+    color: #a69999;
+}
+
+.progress-bar {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    left: 5px;
+}
+
+.progress-percent {
+    position: absolute;
+    right: 5px;
+}
+
+.btn-custom {
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Added border-color transition */
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border-color: black; 
+    border: 1px solid transparent; /
+}
+
+.btn-black:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-white:hover {
+    background-color: black;
+    color: white;
+}
+/* END ABOUT */
+/* start services  */
+
+.dots {
+    border-bottom: 3px dotted #e7e7e7;
+    width: 100px; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+  }
+  
+  
+
+  .card .rounded.circle-hover:hover {
+    background-color: black;
+  }
+  
+  .circle-hover:hover .fas {
+    color: white;
+  }
+  
+
+.custom-bg {
+    background-color: #eeeeee; 
+  }
+  
+.circle-hover:hover {
+    background-color: black;
+  }
+  
+  .icon-hover:hover {
+    color: white; 
+  }
+  .rounded-circle.custom-bg i {
+    display: inline-block;
+    vertical-align: middle; 
+    line-height: 60px; 
+    font-size: 24px; 
+  }
+  
+    /* end  services  */
+
+/* start portfolio */
+.custom-link {
+    margin-right: 30px;
+    text-decoration: none; 
+    color: black; 
+    position: relative;
+  }
+  .custom-link:hover, .custom-link:focus {
+    text-decoration: underline; 
+  }
+  
+  .custom-link:hover {
+    cursor: pointer;
+  }
+
+/* end portfolio */
+.carouselPart{
+    background-color: #f7f7f7;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.carousel-indicators{
+    top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+carousel-item img {
+    width: 50%;
+  }
+
+  .contentOfCarousel {
+    color: black;
+  }
+
+
+
+/* END HOME */
+/* START PORTFOLIO */
+.portfolio {
+    padding: 60px  0px;
+}
+.card{
+    border: 0px;
+    margin-top: 40px;
+}
+.card-img{
+    overflow: hidden;
+}
+.card-body-icon{
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+}
+.card:hover img {
+    transform: scale(1.5,1.5);
+}
+.card img {
+    transition: transform 1s ease-in-out ;
+}
+.portfolio h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.line{
+    width: 50px;
+    height: 5px;
+}
+/* END PORTFOLIO */
+
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
